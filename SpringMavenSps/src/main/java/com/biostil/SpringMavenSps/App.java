@@ -10,6 +10,6 @@ public class App
       ApplicationContext context =new ClassPathXmlApplicationContext("SpringConfig.xml");
       Restaurant restaurantObj =(Restaurant) context.getBean("restaurantBean");
       restaurantObj.prepareHotDrink();
-     
+       System.out.println("fij"); 
     }
 }
