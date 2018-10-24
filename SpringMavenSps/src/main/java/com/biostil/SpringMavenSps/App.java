@@ -10,6 +10,17 @@ public class App
       ApplicationContext context =new ClassPathXmlApplicationContext("SpringConfig.xml");
       Restaurant restaurantObj =(Restaurant) context.getBean("restaurantBean");
       restaurantObj.prepareHotDrink();
-       System.out.println("fijr"); 
-    }
+     
+      int counter = 0;
+      start: {
+         for (int i = 0; i <= 10; i++) {
+            for (int j = 0; j <= 10; j++) {
+               if (i == 5)
+                  break start;
+            }
+            counter++;
+         }
+      }
+      System.out.println(counter);
+   }
 }
