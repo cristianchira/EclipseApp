@@ -4,7 +4,7 @@ public class Restaurant {
 	
 	IHotDrink hotDrink;
 	
-	Restaurant(IHotDrink hotDrink){
+	public void setHotDrink(IHotDrink hotDrink){
 		this.hotDrink = hotDrink;
 		}
 	
